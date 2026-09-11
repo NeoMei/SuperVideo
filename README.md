@@ -1,4 +1,99 @@
-# SuperVideo 精简技能包
+# SuperVideo
+
+SuperVideo 是一个轻量级视频制作技能：提供 PPT、绘本、网页操作教程和教学动画的自然语言引导式制作。它会先确认目标、受众、画幅、声音和 BGM，再生成制作简报、讲稿、分镜、样片和最终 MP4。
+
+正式版下载：[GitHub NeoMei/SuperVideo](https://github.com/NeoMei/SuperVideo) · [v0.1.0 Release](https://github.com/NeoMei/SuperVideo/releases/tag/v0.1.0)
+
+## 能做什么
+
+| 输入 | 输出与默认效果 |
+| --- | --- |
+| PPT/PPTX | 保留原页画面，自动生成百炼旁白、字幕和全屏讲解视频 |
+| Word/DOCX、Markdown | 转为讲稿、分镜和教学动画；主体画面全屏，字幕使用半透明衬底 |
+| 绘本 PDF | 宿主逐页理解并保留原页比例，生成竖屏或横屏绘本讲读视频 |
+| 网站链接或网页资料 | 生成带真实操作步骤、点击高亮和动作提示的网站说明视频 |
+
+所有模式都支持 BGM 导入、音量、循环、裁剪、淡入淡出、场景范围和旁白时自动压低音乐。修改画面或音乐时，未变化的百炼配音会复用缓存。
+
+## 安装
+
+### macOS / Linux
+
+```sh
+node install.mjs --skill-dir "$PWD/installed/supervideo" --engine-dir "$PWD/installed/engine"
+npm ci --prefix "$PWD/installed/engine" --ignore-scripts
+export SUPERVIDEO_RUNTIME_CONFIG="/绝对路径/runtime.json"
+node "$PWD/installed/engine/src/cli.mjs" doctor --runtime "$SUPERVIDEO_RUNTIME_CONFIG"
+node "$PWD/installed/supervideo/scripts/video.mjs" --help
+```
+
+### Windows PowerShell
+
+```powershell
+node .\install.mjs --skill-dir "$PWD\installed\supervideo" --engine-dir "$PWD\installed\engine"
+npm ci --prefix "$PWD\installed\engine" --ignore-scripts
+$env:SUPERVIDEO_RUNTIME_CONFIG = "C:\path\to\runtime.json"
+node "$PWD\installed\engine\src\cli.mjs" doctor --runtime $env:SUPERVIDEO_RUNTIME_CONFIG
+node "$PWD\installed\supervideo\scripts\video.mjs" --help
+```
+
+安装器只写入你指定的两个独立目录，不会覆盖内容不同的旧版本，也不会自动注册全局技能。升级时使用新目录验证后再切换宿主加载路径；回退时切回旧目录即可。
+
+## 运行环境
+
+必需或按输入准备：Node 20+、Python、FFmpeg/ffprobe、Chrome；文档和 PDF 输入还需要 LibreOffice/文档渲染器与 pdftoppm。优先复用宿主已有工具。
+
+百炼凭据只通过环境变量提供，不要写入工程或 JSON：
+
+```sh
+export DASHSCOPE_API_KEY="你的百炼 Key"
+```
+
+运行时配置示例：
+
+```json
+{
+  "python": "/绝对路径/python3",
+  "ffmpeg": "/绝对路径/ffmpeg",
+  "ffprobe": "/绝对路径/ffprobe",
+  "browserExecutable": "/绝对路径/Chrome",
+  "playwrightModule": "/绝对路径/installed/engine/node_modules/playwright-core",
+  "documentRenderer": "/绝对路径/soffice",
+  "pdftoppm": "/绝对路径/pdftoppm",
+  "fontPaths": ["/绝对路径/字体文件"]
+}
+```
+
+## 使用方式
+
+加载 `installed/supervideo/SKILL.md` 后，直接用自然语言描述任务，例如：
+
+```text
+把 /path/to/company.pptx 做成 3 分钟中文产品解说视频，面向客户，使用百炼配音，字幕叠在画面上方，加入 /path/to/music.mp3 作为轻音乐。
+```
+
+技能会按以下顺序引导：确认目标 → 制作简报 → 讲稿和分镜 → 代表样片 → 完整预览 → 精确成片确认 → 导出 MP4、字幕和讲稿。每轮只确认一个关键问题；明确授权和已有偏好会沿用。无需另装 Superpowers。
+
+统一入口：
+
+```sh
+node installed/supervideo/scripts/video.mjs --help
+node installed/supervideo/scripts/video.mjs --project /path/to/project --request /path/to/request.json --runtime /path/to/runtime.json
+```
+
+## 依赖精简说明
+
+安装包**不需要安装 Remotion 或 OpenMontage 插件**，也不需要 clone OpenMontage 仓库。OpenMontage 只随包提供混音、字幕和基础模块的固定来源子集；Remotion 只保留核心 renderer，并使用 esbuild 和裁剪后的无界面渲染入口。安装依赖中不包含 `@remotion/studio`、`@remotion/bundler`、Webpack 或 Rspack。
+
+Node、Python、FFmpeg、Chrome 和文档工具仍是视频制作的真实运行依赖；这部分工具可以由宿主统一管理，并不属于 Remotion/OpenMontage 全量插件安装。
+
+## 文件和许可证
+
+原创源码采用 [Apache-2.0](LICENSE)。OpenMontage、Remotion 及其他第三方代码保留各自许可证，详见 `engine/THIRD_PARTY_NOTICES.md` 和 `engine/licenses/`。发布包不包含用户素材、登录状态、机器路径、API Key 或 `node_modules`。
+
+## 当前版本验证
+
+正式版 v0.1.0 已完成 298 项测试、全新目录安装、四类视频（PPT、绘本、网页、教学）和 BGM 混音验证；下载 ZIP 的 SHA-256 为 `08585e6a004f19a4c5207f4610117b6e8ba3030c9554f7a1a180d00a0d704278`。Windows 原生、登录网站续作以及部分主观听感审阅属于后续验收项，不影响本版本作为正式源码包发布。
 
 接收 PPT/PPTX、DOC/DOCX、Markdown 或网站链接，制作 PPT 自动解说、绘本解说、网页操作教程和教学动画。默认百炼配音；保留全屏画面、半透字幕和真实网页动作提示。BGM 支持导入、音量、全片或场景范围、循环裁剪、淡入淡出和讲话时降低音乐。
 

@@ -1,6 +1,6 @@
 # 更新记录
 
-## 0.1.0 — 首个公开预览版
+## 0.1.0 — 首个正式版
 
 - 支持 PPT/PPTX、DOC/DOCX、Markdown、网站输入及 PPT 解说、绘本解说、网页教程、教学动画四类制作。
 - 百炼配音、全屏 PPT/绘本、半透字幕、真实网页动作提示；BGM 支持范围、裁剪、循环、音量、淡入淡出与配音避让。
@@ -11,4 +11,4 @@
 - 运行依赖精简：内置 OpenMontage 混音/字幕最小模块，移除完整仓库安装要求；Remotion 改用 esbuild 与最小浏览器入口，用户依赖不再包含 Studio、Webpack、Rspack。
 - 补充 PDF 绘本的宿主逐页理解、原页导入、来源映射与竖屏字幕避让说明。
 
-状态：已完成真实 PPT、教学 Markdown 和 PDF 绘本的 macOS 技术成片验证，面向首个公开预览版的分发。完整产品验收仍有已登录网站续作、Windows 原生环境及部分发音、画面/知识和音乐听感审阅待完成；SuperVideo 原创源码采用 Apache-2.0，分发仓库为 NeoMei/SuperVideo。测试、安装和技术视频通过不能代替这些结果。
+状态：已完成真实 PPT、教学 Markdown 和 PDF 绘本的 macOS 技术成片验证，完成正式版源码包、安装、四类视频与 BGM 验证。已登录网站续作、Windows 原生环境及部分发音、画面/知识和音乐听感审阅属于后续验收项；SuperVideo 原创源码采用 Apache-2.0，分发仓库为 NeoMei/SuperVideo。
