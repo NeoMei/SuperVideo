@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "distribution": "supervideo-audited-subset",
+  "source": "https://github.com/calesthio/OpenMontage",
+  "commit": "08e2151fa02de28a5d6a312b3d575692bf147ad7",
+  "license": "AGPL-3.0",
+  "modifications": [],
+  "files": {
+    "LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/base_tool.py": "eb7e1041c2924aa21c42117ac3ca9f702208e95fc7f12616e93ff0115d1aa88e",
+    "tools/audio/__init__.py": "c8498dd5ce00042328c1d591591e3f3ea30c59a35771a99fb027878ed31be80d",
+    "tools/audio/audio_mixer.py": "05bd0d3d59f1868322785da6cd70255dc9a759973341fda3db74a6f424d5393c",
+    "tools/audio/elevenlabs_tts.py": "2fb5b746093146f68649c519990c631bd6431cd1051028e87696bfc62a093601",
+    "tools/subtitle/__init__.py": "796a229e70b4b0dbcc629d20decb3c791e8e7d6bd2a87665448ef72403a19809",
+    "tools/subtitle/subtitle_gen.py": "f099642589002119c01fa62efd6d74f98ee1fc3d00abdd4c9c545ca621d7ce7b"
+  }
+}

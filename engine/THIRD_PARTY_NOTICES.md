@@ -1,0 +1,8 @@
+# Third-party sources and notices
+
+SuperVideo original source and skill instructions are Copyright 2026 NeoMei and licensed under the Apache License, Version 2.0; see LICENSE. Third-party components retain their own licenses. The SuperVideo license does not replace upstream terms or grant rights to user-provided books, slides, fonts, music or other media.
+
+- OpenMontage: https://github.com/calesthio/OpenMontage, pinned commit 08e2151fa02de28a5d6a312b3d575692bf147ad7. Its GNU AGPLv3 LICENSE is preserved in licenses/OpenMontage-LICENSE. Only the audited mixer/subtitle/base closure and optional legacy TTS module are included under vendor/openmontage with original license and hash provenance. No full checkout or upstream requirements installation is needed. Its AGPLv3 terms remain applicable; no process-boundary exception is claimed.
+- Remotion and @remotion/renderer: version 4.0.522, https://github.com/remotion-dev/remotion. A minimal headless browser entry derived from the pinned Studio package is in vendor/remotion with modification, attribution and license notices; the full Studio/bundler and Webpack/Rspack are excluded. Core/renderer actual installed LICENSE.md files are retained in licenses/; dependencies and transitive versions are pinned by package-lock.json and installed separately.
+- Chinese fonts are imported per project with their own license and provenance. Noto Sans CJK SC from https://github.com/notofonts/noto-cjk is an available OFL-licensed option. Font binaries are not in the lightweight distribution. System fonts must not be assumed redistributable.
+- External FFmpeg, Python, document-rendering tools and Chrome are separately installed prerequisites with their respective upstream licenses, not bundled binaries.

@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "package": "supervideo-lite",
+  "version": "0.1.0",
+  "protocolVersion": 1,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 1599,
+      "sha256": "c2938dd8a58320cd3abdf03f520092f99b443247e4e91adc9cd114bce7751019"
+    },
+    {
+      "path": "engine/engine-manifest.json",
+      "size": 11072,
+      "sha256": "c9c0d0fdd953c29cd540f56fe8f79cb1d959054714d3189cf8a9846b78e98748"
+    },
+    {
+      "path": "engine/LICENSE",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "engine/licenses/OpenMontage-LICENSE",
+      "size": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "engine/licenses/Remotion-LICENSE.md",
+      "size": 2823,
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+    },
+    {
+      "path": "engine/licenses/Remotion-renderer-LICENSE.md",
+      "size": 2823,
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+    },
+    {
+      "path": "engine/package-lock.json",
+      "size": 75690,
+      "sha256": "bd6308342db839366eb7815ec5802f1e1c0800a778f4f765b6682c75ee5eb328"
+    },
+    {
+      "path": "engine/package.json",
+      "size": 730,
+      "sha256": "ea716de02914088cab95bee1a1f4bb227e5117f772a35b119a899a71b5ac3186"
+    },
+    {
+      "path": "engine/python/bridge.py",
+      "size": 615,
+      "sha256": "f88eb3b64005b439a2dd547e23873b0492e490f19db7338b504ef14d47183d51"
+    },
+    {
+      "path": "engine/python/documents.py",
+      "size": 19461,
+      "sha256": "da459d5eaa6e6b5fe1dd417ce5dab4e56fa69f9ba4b938171b029e7373599705"
+    },
+    {
+      "path": "engine/python/openmontage.py",
+      "size": 2577,
+      "sha256": "7b73832f85e4019e37cd19ce6661d3e539b1adbb39a0772be787690d3b8472bd"
+    },
+    {
+      "path": "engine/runtime-manifest.json",
+      "size": 1499,
+      "sha256": "068f1047ba998b9bdf0bb3c00a39e478c958a3a69321f8ebfb25d0028f90ab9b"
+    },
+    {
+      "path": "engine/src/cli.mjs",
+      "size": 13163,
+      "sha256": "d57f5761379d0ddda0e4820344fb8ba626481cb6faf826b0cf70e813800291ae"
+    },
+    {
+      "path": "engine/src/core/approvals.mjs",
+      "size": 10352,
+      "sha256": "88185b216894bf762dcc6650537775bd0ddc392e664eba673658abccd845a7f4"
+    },
+    {
+      "path": "engine/src/core/jobs.mjs",
+      "size": 7405,
+      "sha256": "49ab7537e5b216e39b478c08ba51e22b911a7f969e20cb4e455fa40c0385c2c2"
+    },
+    {
+      "path": "engine/src/core/model.mjs",
+      "size": 19052,
+      "sha256": "16eea95b370b4a8cadfe33593c71c308ee07953170ace7761cb81ff39f492f80"
+    },
+    {
+      "path": "engine/src/core/readiness.mjs",
+      "size": 598,
+      "sha256": "338f06a33d8b4d8c0df303261776c0b360128221b507d95df04ddf564ed36fc1"
+    },
+    {
+      "path": "engine/src/core/revise.mjs",
+      "size": 2641,
+      "sha256": "7af874ec3197099dae2aa94a701561717cce96b7ed4a48aac01dd19836ea8401"
+    },
+    {
+      "path": "engine/src/core/store.mjs",
+      "size": 7581,
+      "sha256": "6b3fc815880ae990ae55571f061a2aad112b0525588741d5e05843ad48a7eed0"
+    },
+    {
+      "path": "engine/src/export.mjs",
+      "size": 15276,
+      "sha256": "228b7fd32347ff9ac1b571d13644be9c5aacb96efd27f6cd151c9f38053c1bc0"
+    },
+    {
+      "path": "engine/src/inputs/documents.mjs",
+      "size": 13150,
+      "sha256": "878c0835a70417a6787bf5b8b7b9379b7ef4b1ae6be0de977ccb13a8d6102ca6"
+    },
+    {
+      "path": "engine/src/inputs/index.mjs",
+      "size": 2382,
+      "sha256": "01fb1f54665112a21468e47c5413707f59562c90421606832ccde27e735baa4f"
+    },
+    {
+      "path": "engine/src/inputs/markdown.mjs",
+      "size": 5213,
+      "sha256": "2904bc8ade35a9e4b06dea15a1d2f4acce42c226327b3eddad486fd0f61d4429"
+    },
+    {
+      "path": "engine/src/inputs/original.mjs",
+      "size": 1585,
+      "sha256": "0a8b2489876e1c6b3511258b6c9766a601a61e33f4ca95e00620caf6f0ba859b"
+    },
+    {
+      "path": "engine/src/inputs/website.mjs",
+      "size": 11818,
+      "sha256": "6981625a00db6620086ecbdc15d791d600fc8d7a4322dc63d37fea188d2916e2"
+    },
+    {
+      "path": "engine/src/media/audio.mjs",
+      "size": 19988,
+      "sha256": "928309ab279f50083ad2ce30f0d5684d46860d08270857cacee4730b72926163"
+    },
+    {
+      "path": "engine/src/media/interaction.mjs",
+      "size": 1281,
+      "sha256": "887140cb210037e5a3bee08f254ddb414bdbe44fc48439c63e69c7f476b339ab"
+    },
+    {
+      "path": "engine/src/media/music.mjs",
+      "size": 14869,
+      "sha256": "fabce46c3e3abd67ac5a35438a14b396d83d95eb11d8522379d9f40593760937"
+    },
+    {
+      "path": "engine/src/media/recording.mjs",
+      "size": 29815,
+      "sha256": "b50fdba786002d8a0da73a8da07d58981247dd0f9ef080bac11eeb0d76146bff"
+    },
+    {
+      "path": "engine/src/media/timeline.mjs",
+      "size": 7407,
+      "sha256": "c3f3975121447b357ad9bb965a8beab19ee8413efc4bff4c82e6585f08c11388"
+    },
+    {
+      "path": "engine/src/modes/book.mjs",
+      "size": 9535,
+      "sha256": "3dc9bec45dd65af123f0bbb9d393e965abbb424cd71fb473350dd7a54c649cf3"
+    },
+    {
+      "path": "engine/src/modes/lesson.mjs",
+      "size": 3106,
+      "sha256": "3f390013cde91c9287dcd4b4f5e785cd90850f9bceed34512018486d644cd89f"
+    },
+    {
+      "path": "engine/src/modes/ppt.mjs",
+      "size": 8505,
+      "sha256": "624fdd20728364fa821cbfe30969c752ce591e78ec4ad7aa58a9ce07a50efcf9"
+    },
+    {
+      "path": "engine/src/modes/website.mjs",
+      "size": 6101,
+      "sha256": "0caec590878230ab000a234eede65a83447897fe80ec43fafe00aeb4c18122d5"
+    },
+    {
+      "path": "engine/src/providers/assets.mjs",
+      "size": 3143,
+      "sha256": "44ad747cc38750047f194323f369caaaee50f67f97e3bcd1bf411c1db9d09595"
+    },
+    {
+      "path": "engine/src/providers/bailian.mjs",
+      "size": 9056,
+      "sha256": "cbd8e35558959e81a89f530925c9a214a800956ea408fef995aa1d108e702378"
+    },
+    {
+      "path": "engine/src/providers/doctor.mjs",
+      "size": 9047,
+      "sha256": "6e7367dd0e3b5046c12a78a8484695448e034e6163e11adfc8a6ebecb7415ecc"
+    },
+    {
+      "path": "engine/src/providers/documents.mjs",
+      "size": 138,
+      "sha256": "7344d8c6b04746d1a4b94245b8a31054b2424b2fd6d671be4a6e661d14f93b4d"
+    },
+    {
+      "path": "engine/src/providers/openmontage.mjs",
+      "size": 9385,
+      "sha256": "e7265b43208e7658f0b0628cf66164b7fd28f62b823d672ec74e5d1620247350"
+    },
+    {
+      "path": "engine/src/providers/process.mjs",
+      "size": 1177,
+      "sha256": "b2cc3de92a8c364c922a13f123f44ff1cb2637f91f8c58e00ad0eaccbadafa9c"
+    },
+    {
+      "path": "engine/src/providers/tts.mjs",
+      "size": 14010,
+      "sha256": "4ba59d52256967aef70bfd4cb21587490d61cfd94def11f644e42a443cc157b8"
+    },
+    {
+      "path": "engine/src/quality.mjs",
+      "size": 16886,
+      "sha256": "198592ee20000836f6dedf5b492de3886fd40b4f3be0a5809dd76def4fb0852e"
+    },
+    {
+      "path": "engine/src/render/bundle.mjs",
+      "size": 4337,
+      "sha256": "3ad83cfc12a2f913c8bff51474c0068bdebaeab5f160575f13b7f8d120825a97"
+    },
+    {
+      "path": "engine/src/render/components-schema.mjs",
+      "size": 2303,
+      "sha256": "7bff46a9cf5bdf8070314e9dab2bc61f0f291f133c2997ac7ce6984af5361364"
+    },
+    {
+      "path": "engine/src/render/components.tsx",
+      "size": 8525,
+      "sha256": "5de4dfeb5a0bae3a7385fb042769d04eaa4aff1809faa6d7101e13c92846ccd0"
+    },
+    {
+      "path": "engine/src/render/index.tsx",
+      "size": 92,
+      "sha256": "b9900e8f2d9dd0508919db76ded7f60ef532157750339d786c3c395643fc6675"
+    },
+    {
+      "path": "engine/src/render/preview.tsx",
+      "size": 4712,
+      "sha256": "22ec95e4491516bd3062232c85530247e839ee6281b5516d13da3d3cc85f9d8a"
+    },
+    {
+      "path": "engine/src/render/project-components.mjs",
+      "size": 4652,
+      "sha256": "8efec729e0729fd79d03892d89eb31550bed278d1d8373ae88b0aaee85b021ac"
+    },
+    {
+      "path": "engine/src/render/recording-position.mjs",
+      "size": 1918,
+      "sha256": "effbf3a7d0ac05ede7f120b49e94676c1b96fd7e4ce3bad7cc90f4ecf0c74eae"
+    },
+    {
+      "path": "engine/src/render/render-worker.mjs",
+      "size": 3433,
+      "sha256": "86ff4bba69229f8ff067f2e9db8034db8fc49e1833aee50e2752541b4443322c"
+    },
+    {
+      "path": "engine/src/render/render.mjs",
+      "size": 28330,
+      "sha256": "67ce139b0bcecc604c6c3c0d2f3c7cd666df1afd432455a1ac0ae8abc666b867"
+    },
+    {
+      "path": "engine/src/render/Root.tsx",
+      "size": 2448,
+      "sha256": "44a94d0f27dbe9bbb47bd7a914722fab45cf8beb747efd328498468e5861c4bd"
+    },
+    {
+      "path": "engine/src/render/Scene.tsx",
+      "size": 8987,
+      "sha256": "bec81c401586f610cbde9291461a47af5ea6f92d35b64f40ae424d30cc3e131f"
+    },
+    {
+      "path": "engine/src/render/schema.mjs",
+      "size": 8765,
+      "sha256": "dcc4aec16f127a466bec8211d2395c1be0337af7f127fb396a60b5b12d139301"
+    },
+    {
+      "path": "engine/src/review.mjs",
+      "size": 8687,
+      "sha256": "8a2f65eab1483be3f1b107adce593e14fef87a3680fb776a37545c2e8a68d2e4"
+    },
+    {
+      "path": "engine/src/runtime-cli.mjs",
+      "size": 38613,
+      "sha256": "054473e045a437f34e1a367e8cc8f2ee89ffcff5530b7fa9a8884d37ca140f1c"
+    },
+    {
+      "path": "engine/THIRD_PARTY_NOTICES.md",
+      "size": 1756,
+      "sha256": "7359d9e34ff94d906a7d988142918b8090974ba8495b1effa2e635859cfb2fe6"
+    },
+    {
+      "path": "engine/vendor/openmontage/LICENSE",
+      "size": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "engine/vendor/openmontage/provenance.json",
+      "size": 1033,
+      "sha256": "540f51e200a31263c6e31f1266d8cc6915352cc8b16a490e2e11c9e285a6a9bf"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/audio/__init__.py",
+      "size": 77,
+      "sha256": "c8498dd5ce00042328c1d591591e3f3ea30c59a35771a99fb027878ed31be80d"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/audio/audio_mixer.py",
+      "size": 31532,
+      "sha256": "05bd0d3d59f1868322785da6cd70255dc9a759973341fda3db74a6f424d5393c"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/audio/elevenlabs_tts.py",
+      "size": 6734,
+      "sha256": "2fb5b746093146f68649c519990c631bd6431cd1051028e87696bfc62a093601"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/base_tool.py",
+      "size": 17265,
+      "sha256": "eb7e1041c2924aa21c42117ac3ca9f702208e95fc7f12616e93ff0115d1aa88e"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/subtitle/__init__.py",
+      "size": 48,
+      "sha256": "796a229e70b4b0dbcc629d20decb3c791e8e7d6bd2a87665448ef72403a19809"
+    },
+    {
+      "path": "engine/vendor/openmontage/tools/subtitle/subtitle_gen.py",
+      "size": 12345,
+      "sha256": "f099642589002119c01fa62efd6d74f98ee1fc3d00abdd4c9c545ca621d7ce7b"
+    },
+    {
+      "path": "engine/vendor/remotion/LICENSE.MIT",
+      "size": 1090,
+      "sha256": "5e3c284e5c3f23b1defe5886e5a61011ee953c505e7e850a50d5a5b15446efac"
+    },
+    {
+      "path": "engine/vendor/remotion/NOTICE.md",
+      "size": 1314,
+      "sha256": "6edc239d58253a2c6ea8a31f5898b0ec608f9317bee8ee60d50299d943cdf6c3"
+    },
+    {
+      "path": "engine/vendor/remotion/provenance.json",
+      "size": 1279,
+      "sha256": "89fe6203102e133122d5ad33f5da8f1295c4527cf86fcf8796cc1cd368037717"
+    },
+    {
+      "path": "engine/vendor/remotion/REMOTION-LICENSE.md",
+      "size": 2823,
+      "sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+    },
+    {
+      "path": "engine/vendor/remotion/render-entry.mjs",
+      "size": 13035,
+      "sha256": "fa52983d67621782a0bf7bd3bcbe9726530457ec83dc3606134c1173145d9edd"
+    },
+    {
+      "path": "install.mjs",
+      "size": 8403,
+      "sha256": "db1283d3527002d1398924daaade3d42fc92eb5d0eb5ffbdefc7c2dc0b9f732f"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "README.md",
+      "size": 8740,
+      "sha256": "4ed07cdf6f5f2682541e65bc543aba552944d5ec0080caa5653e014dfcbcf839"
+    },
+    {
+      "path": "supervideo/references/book.md",
+      "size": 1935,
+      "sha256": "b56433bc3b7a59108666f6f658e45d9e736b2f6d1fd4a8b97dc7b019e9a8468e"
+    },
+    {
+      "path": "supervideo/references/commands.md",
+      "size": 1258,
+      "sha256": "a975f55af07cd88f842d08748f35fbdc26577c6c9e1c653c2b377745a5e74113"
+    },
+    {
+      "path": "supervideo/references/guidance.md",
+      "size": 7525,
+      "sha256": "8259f9e4625773fdce14c4a61c7c7d4af3723f21ac55034f179367fedd355e80"
+    },
+    {
+      "path": "supervideo/references/lesson.md",
+      "size": 2230,
+      "sha256": "a6a67927ba5245bcd83aa419479fc4845d2625d83697ceef6ad3609e4701f1e9"
+    },
+    {
+      "path": "supervideo/references/ppt.md",
+      "size": 1123,
+      "sha256": "824741cd77880dcb1efb7d8e9881455e450c5c842e57536c5f283047b264cfb8"
+    },
+    {
+      "path": "supervideo/references/project.md",
+      "size": 2650,
+      "sha256": "da79d573f72e6408591c912c0ea58f3813c2320172aee68559437a4ab2f21ebd"
+    },
+    {
+      "path": "supervideo/references/website.md",
+      "size": 1494,
+      "sha256": "86f76b80525bbe236ea5766591aa591e11529abc94585ff94c63eb9d60be3c8f"
+    },
+    {
+      "path": "supervideo/runtime.lock.json",
+      "size": 215,
+      "sha256": "28164ef0767741f22d09edb6a3a486728e21fe55bf6d4f02fadac5f32247da02"
+    },
+    {
+      "path": "supervideo/scripts/video.mjs",
+      "size": 6800,
+      "sha256": "941d44de8c1c2bc61886e5dffb5a71008d21ba487cd91a58d13d08fef1531827"
+    },
+    {
+      "path": "supervideo/skill-manifest.json",
+      "size": 1643,
+      "sha256": "cbb2edfbbed7dafe6d4f4dda4c91385f736e64bd4a5f263f6f0535557a8c0e63"
+    },
+    {
+      "path": "supervideo/SKILL.md",
+      "size": 4202,
+      "sha256": "32e7d07b8051961d8b1d8b2e38f0db1947590efb2977691ae975241e8c8c8c8f"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "openmontage": {
+    "source": "https://github.com/calesthio/OpenMontage.git",
+    "commit": "08e2151fa02de28a5d6a312b3d575692bf147ad7",
+    "licenseFile": "LICENSE",
+    "checkout": "bundled-subset-default",
+    "license": "GNU AGPLv3",
+    "bundledRoot": "vendor/openmontage",
+    "provenance": "vendor/openmontage/provenance.json"
+  },
+  "capabilities": [
+    "python",
+    "ffmpeg",
+    "ffprobe",
+    "openmontage",
+    "python-modules",
+    "playwright-browser",
+    "playwright-recording",
+    "font-readable",
+    "document-renderer",
+    "pdftoppm",
+    "tts-bailian"
+  ],
+  "distribution": {
+    "kind": "supervideo-lite-source-engine",
+    "install": "npm ci --ignore-scripts",
+    "doctor": "node src/cli.mjs doctor --runtime /absolute/runtime.json",
+    "external": [
+      "Node >=20",
+      "Python",
+      "FFmpeg/ffprobe",
+      "Chrome",
+      "document renderer",
+      "pdftoppm"
+    ],
+    "excluded": [
+      "node_modules",
+      "browser binaries",
+      "machine runtime config",
+      "credentials/login state",
+      "system fonts",
+      "research probes"
+    ],
+    "notices": "THIRD_PARTY_NOTICES.md",
+    "entrypoint": "node src/runtime-cli.mjs --help"
+  },
+  "remotion": {
+    "version": "4.0.522",
+    "renderer": "@remotion/renderer",
+    "compiler": "esbuild",
+    "browserEntry": "vendor/remotion/render-entry.mjs",
+    "excluded": [
+      "@remotion/studio",
+      "@remotion/bundler",
+      "webpack",
+      "@rspack/core"
+    ]
+  }
+}

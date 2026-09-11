@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "package": "@remotion/studio",
+  "version": "4.0.522",
+  "declaredLicense": "MIT",
+  "repository": "https://github.com/remotion-dev/remotion/tree/main/packages/studio",
+  "sourceHashes": {
+    "@remotion/studio/dist/esm/renderEntry.mjs": "eb56622a7a7a836142ed1b41e62024b21b90acd13db8c6759d8156a0390d12fc",
+    "@remotion/studio/dist/esm/chunk-je0h1bgt.js": "a369c59656359ebe3978766c7ebd24374621a08208c8ac9d55638c01aa2120b6",
+    "remotion/LICENSE.md": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673"
+  },
+  "modifications": [
+    "Removed index-mode Studio dynamic import and fallback UI",
+    "Removed unused loading spinner and headless predicate",
+    "Removed unused helper imports; inlined BACKGROUND_HEX and TRANSPARENT from verified upstream color chunk",
+    "Added optional SuperVideo preview controls inside the shared core timeline context"
+  ],
+  "files": {
+    "render-entry.mjs": "fa52983d67621782a0bf7bd3bcbe9726530457ec83dc3606134c1173145d9edd",
+    "REMOTION-LICENSE.md": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673",
+    "NOTICE.md": "6edc239d58253a2c6ea8a31f5898b0ec608f9317bee8ee60d50299d943cdf6c3",
+    "LICENSE.MIT": "5e3c284e5c3f23b1defe5886e5a61011ee953c505e7e850a50d5a5b15446efac"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "supervideo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "test:acceptance": "node --test tests/acceptance/run.test.mjs",
+    "pack:local": "node scripts/pack.mjs --output dist/supervideo",
+    "pack:lite": "node scripts/pack-lite.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@babel/parser": "7.24.1",
+    "@remotion/renderer": "4.0.522",
+    "playwright-core": "1.62.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark-gfm": "4.0.1",
+    "remark-math": "6.0.0",
+    "remark-parse": "11.0.0",
+    "remotion": "4.0.522",
+    "unified": "11.0.5",
+    "esbuild": "0.28.1"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "package": "supervideo-skill",
+  "version": "0.1.0",
+  "protocolVersion": 1,
+  "files": [
+    {
+      "path": "references/book.md",
+      "size": 1935,
+      "sha256": "b56433bc3b7a59108666f6f658e45d9e736b2f6d1fd4a8b97dc7b019e9a8468e"
+    },
+    {
+      "path": "references/commands.md",
+      "size": 1258,
+      "sha256": "a975f55af07cd88f842d08748f35fbdc26577c6c9e1c653c2b377745a5e74113"
+    },
+    {
+      "path": "references/guidance.md",
+      "size": 7525,
+      "sha256": "8259f9e4625773fdce14c4a61c7c7d4af3723f21ac55034f179367fedd355e80"
+    },
+    {
+      "path": "references/lesson.md",
+      "size": 2230,
+      "sha256": "a6a67927ba5245bcd83aa419479fc4845d2625d83697ceef6ad3609e4701f1e9"
+    },
+    {
+      "path": "references/ppt.md",
+      "size": 1123,
+      "sha256": "824741cd77880dcb1efb7d8e9881455e450c5c842e57536c5f283047b264cfb8"
+    },
+    {
+      "path": "references/project.md",
+      "size": 2650,
+      "sha256": "da79d573f72e6408591c912c0ea58f3813c2320172aee68559437a4ab2f21ebd"
+    },
+    {
+      "path": "references/website.md",
+      "size": 1494,
+      "sha256": "86f76b80525bbe236ea5766591aa591e11529abc94585ff94c63eb9d60be3c8f"
+    },
+    {
+      "path": "runtime.lock.json",
+      "size": 215,
+      "sha256": "28164ef0767741f22d09edb6a3a486728e21fe55bf6d4f02fadac5f32247da02"
+    },
+    {
+      "path": "scripts/video.mjs",
+      "size": 6800,
+      "sha256": "941d44de8c1c2bc61886e5dffb5a71008d21ba487cd91a58d13d08fef1531827"
+    },
+    {
+      "path": "SKILL.md",
+      "size": 4202,
+      "sha256": "32e7d07b8051961d8b1d8b2e38f0db1947590efb2977691ae975241e8c8c8c8f"
+    }
+  ]
+}
